@@ -6,9 +6,10 @@ const app = express();
 // 프론트엔드가 보낸 JSON 데이터를 읽기 위한 필수 설정
 app.use(express.json());
 
-app.listen(3000, () => {
+/* app.listen(3000, () => {
     console.log('서버가 http://localhost:3000 에서 실행 중입니다.');
-});
+}); */
+module.exports = app;
 
 app.get('/', (req, res) => {
     res.send('Hello, Express!');
