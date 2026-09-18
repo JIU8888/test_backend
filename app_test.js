@@ -9,7 +9,6 @@ app.use(express.json());
 /* app.listen(3000, () => {
     console.log('서버가 http://localhost:3000 에서 실행 중입니다.');
 }); */
-module.exports = app;
 
 app.get('/', (req, res) => {
     res.send('Hello, Express!');
@@ -42,4 +41,5 @@ app.post('/ask-ai', async (req, res) => {
   }
 });
 
+module.exports = app;
 // node 명령어로 실행
